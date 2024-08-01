@@ -6,7 +6,7 @@ url = "https://efts.sec.gov/LATEST/search-index"
 end_date = datetime.today().strftime('%Y-%m-%d')
 start_date = (datetime.today() - timedelta(days=7)).strftime('%Y-%m-%d')
 params = {
-    "q": "\"reverse split\" AND \"no fractional shares\"",
+    "q": "\"reverse split\" AND \"no fractional shares\" AND \"round\" OR \"rounded\"",
     "dateRange": "custom",
     "startdt": start_date,
     "enddt": end_date,
